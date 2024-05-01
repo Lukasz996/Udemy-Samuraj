@@ -13,5 +13,7 @@
 // 	console.log("Nie możesz wejść, nie wiem jak się nazywasz!");
 // }
 
-const playerName = "Kratos";
-console.log(`Witaj ${playerName ? playerName + "!" : "nieznajomy"}`);
+// const playerName = "Kratos";
+// console.log(`Witaj ${playerName ? playerName + "!" : "nieznajomy"}`);
+
+const game = ([time, points, name] = [123.123, 15, "Uti"]);
