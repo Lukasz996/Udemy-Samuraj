@@ -16,4 +16,14 @@
 // const playerName = "Kratos";
 // console.log(`Witaj ${playerName ? playerName + "!" : "nieznajomy"}`);
 
-const game = ([time, points, name] = [123.123, 15, "Uti"]);
+// const game = ([time, points, name] = [123.123, 15, "Uti"]);
+
+const animals = ["dog", "cat", "canary", "mouse"];
+// animals.splice(0, 3);
+
+const namesUsers = ["Zenon", "Anna", "Jacek", "Lukasz", "Gabriel"];
+namesUsers.sort()
+console.log(namesUsers);
+
+namesUsers.splice(1, 2);
+console.log(namesUsers);
