@@ -65,3 +65,38 @@
 // 	console.log("Pierwszy element tablicy to nie 'apple");
 // }
 
+// for (let i = 0; i < 5; i++) {
+// 	console.log("wyświetlenie " + i);
+// }
+
+// let number = 0;
+// while (number < 5) {
+// 	number++;
+// 	console.log(number);
+// }
+
+// let money = 50;
+// while (money >= 8) {
+// 	console.log("Mam jeszcze " + money + " złotych. To pijemy!");
+// 	money -= 8;
+// }
+// alert(`za ${money} złote, już piwka nie kupie!`);
+
+// let gasoline = 10;
+// let km = 0;
+
+// while (gasoline--) {
+// 	km += 18;
+// 	console.log(
+// 		"Przejechaliśmy " +
+// 			km +
+// 			" kilometrów. Zostało nam jeszcze " +
+// 			gasoline +
+// 			" litrów benzyny"
+// 	);
+// }
+
+const usersAge = [19, 18, 15, 45, 34, 33, 25];
+for (let i = 0; i < usersAge.length; i++) {
+	console.log(`wiek użytkownika numer ${i} to ${usersAge[i]}`);
+}
