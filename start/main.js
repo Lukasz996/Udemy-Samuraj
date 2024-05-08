@@ -96,7 +96,73 @@
 // 	);
 // }
 
-const usersAge = [19, 18, 15, 45, 34, 33, 25];
-for (let i = 0; i < usersAge.length; i++) {
-	console.log(`wiek użytkownika numer ${i} to ${usersAge[i]}`);
-}
+// const usersAge = [19, 18, 15, 45, 34, 33, 25];
+// for (let i = 0; i < usersAge.length; i++) {
+// 	console.log(`wiek użytkownika numer ${i + 1} to ${usersAge[i]}`);
+// }
+
+// const userDateBirth = [2000, 1992, 1932, 1980];
+// const currentYear = 2018;
+
+// for (let i = 0; i < userDateBirth.length; i++) {
+// 	const userAge = currentYear - userDateBirth[i];
+// 	console.log(`wiek użytkownika numer ${i + 1} to ${userAge}`);
+// }
+
+// const guest = [
+// 	"piłkarz",
+// 	" kucharz",
+// 	" pisarz",
+// 	"magazynier",
+// 	"piosenkarz",
+// 	"programista",
+// 	"informatyk",
+// 	"polityk",
+// ];
+
+// for (let i = 0; i < guest.length; i++) {
+// 	if (guest[i] === "programista") {
+// 		console.log("Nie ma juz miejsc Panie " + guest[i] + " przepraszamy!");
+// 	} else if (guest[i] === "pisarz") {
+// 		console.log("Nie podawać alkoholu " + guest[i] + " jutro mecz!");
+// 	} else if (guest[i] === "magazynier") {
+// 		console.log("Schować wszystkie paczki bo wszystko ułoży!");
+// 	} else {
+// 		console.log(`Witamy Panie ${guest[i]}, zapraszamy!`);
+// 	}
+// }
+
+// let sum = 0;
+
+// for (let i = 0; i <= 100; i++) {
+// 	if (i % 2 === 0) {
+// 		sum += i;
+// 	}
+// }
+// console.log("Suma wszystkich liczb nieparzystych wynosi", sum);
+
+// let h = 50;
+
+// for (let i = 0; i <= h; i++) {
+// 	let stars = "";
+
+// 	for (let j = 0; j <= i; j++) {
+// 		stars += "*";
+// 	}
+// 	console.log(stars);
+// }
+
+
+// let counter = 0;
+// let number = 1;
+
+// while (number <= 50) {
+// 	if (number % 3 === 0) {
+// 		counter++;
+// 	}
+// 	number++;
+// }
+// console.log(
+// 	"ilość liczb podzielnych przez 3 w przedziale od 1 do 50 wynosi:",
+// 	counter
+// );
