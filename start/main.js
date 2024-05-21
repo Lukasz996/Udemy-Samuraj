@@ -152,7 +152,6 @@
 // 	console.log(stars);
 // }
 
-
 // let counter = 0;
 // let number = 1;
 
@@ -166,3 +165,60 @@
 // 	"ilość liczb podzielnych przez 3 w przedziale od 1 do 50 wynosi:",
 // 	counter
 // );
+
+// function message(x, y, z) {
+// 	return x + y * z;
+// }
+
+// const showMeText = (text) => {
+//     console.log(text);
+// }
+
+// showMeText("elo!")
+
+// const divideBy = function (number) {
+// 	console.log(number / 2);
+// };
+
+// const result = divideBy(10);
+
+// let number = 0;
+// const add = function () {
+// 	number++;
+// 	// console.log(number);
+// };
+
+// const divideBy3 = function (number) {
+// 	return number / 3;
+// };
+
+// const result2 = divideBy3(9);
+
+// const divideBy5 = function (number) {
+// 	result = number / 5;
+// 	console.log(result);
+// 	return result;
+// };
+
+// const showMyName = function () {
+// 	console.log("Bartek");
+// };
+
+// const showUserName = function (userName) {
+// 	console.log(userName);
+// };
+
+// showUserName("Franek");
+
+// function showInfoAboutUser(age, name, sex) {
+// 	if (arguments.length === 0) {
+// 		console.log("Nie mam żadnych informacji o tym użytkowniku");
+// 	} else if (arguments.length === 1) {
+// 		console.log(`Użytkownik ma ${age} lat.`);
+// 	} else if (arguments.length === 2) {
+// 		console.log(`Użytkownik ma ${age} lat i ma na imię ${name}.`);
+// 	} else if (arguments.length === 3) {
+// 		console.log(`Użytkownik ma ${age} lat i ma na imię ${name} i jest ${sex}`);
+// 	}
+// }
+
