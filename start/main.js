@@ -222,3 +222,9 @@
 // 	}
 // }
 
+// function showUsers(owner, ...others) {
+// 	console.log(
+// 		`Na imprezie był ${owner} ${others.length ? "oraz " + others + "." : "."}`
+// 	);
+// }
+// showUsers("Maciek", "Janek");
