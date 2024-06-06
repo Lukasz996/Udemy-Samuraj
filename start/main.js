@@ -228,3 +228,20 @@
 // 	);
 // }
 // showUsers("Maciek", "Janek");
+
+// function calculateAverage(numbers) {
+// 	let sum = 0;
+// 	for (let i = 0; i < numbers.length; i++) {
+// 		sum += numbers[i];
+// 	}
+// 	let average = sum / numbers.length;
+// 	return average;
+// }
+
+// let result = calculateAverage([1, 2, 3, 4, 5]);
+// console.log(result);
+
+function filterEvenNumbers (numbers) {
+    let sum = 0 
+    
+}
