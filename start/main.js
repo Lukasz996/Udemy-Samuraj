@@ -228,7 +228,7 @@
 // 	);
 // }
 // showUsers("Maciek", "Janek");
-
+// ==================================================================================================
 // function calculateAverage(numbers) {
 // 	let sum = 0;
 // 	for (let i = 0; i < numbers.length; i++) {
@@ -241,7 +241,29 @@
 // let result = calculateAverage([1, 2, 3, 4, 5]);
 // console.log(result);
 
-function filterEvenNumbers (numbers) {
-    let sum = 0 
-    
-}
+// function filterEvenNumbers(numbers) {
+// 	let evenNumbers = [];
+// 	for (let i = 0; i < numbers.length; i++) {
+// 		let number = numbers[i];
+// 		if (number % 2 === 0) {
+// 			evenNumbers.push(number);
+// 		}
+// 	}
+// 	return evenNumbers;
+// }
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
+
+
+// const countOccurrences = function(array, element) {
+//     let count = 0;
+   
+//     for (let i = 0; i < array.length; i++) {
+//       if (array[i] === element) {
+//         count++;
+//       }
+//     }
+   
+//     return count;
+//   }
+   
+//   console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana"], "banana"));
