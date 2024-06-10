@@ -253,17 +253,31 @@
 // }
 // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
 
-
 // const countOccurrences = function(array, element) {
 //     let count = 0;
-   
+
 //     for (let i = 0; i < array.length; i++) {
 //       if (array[i] === element) {
 //         count++;
 //       }
 //     }
-   
+
 //     return count;
 //   }
-   
+
 //   console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana"], "banana"));
+
+// let global = "global";
+
+// if (true) {
+// 	let example1 = "example1";
+// 	console.log(example1);
+
+// 	if (true) {
+// 		example1 = "example2";
+// 		console.log(example1);
+// 	}
+// 	console.log(example1);
+// 	console.log(global);
+// }
+// console.log(global);
