@@ -281,3 +281,24 @@
 // 	console.log(global);
 // }
 // console.log(global);
+
+// const human = {
+// 	name: "Łukasz",
+// 	age: 28,
+// 	"eye color": "blue",
+// };
+
+const counter = {
+	score: 0,
+	increment: function () {
+		this.score++;
+		console.log(this.score);
+	},
+    decrement: function() {
+        this.score--;
+        console.log(this.score);
+    }
+};
+
+counter.increment()
+counter.decrement()
