@@ -1,3 +1,10 @@
+const btn = document.querySelector("button");
+const addElement = function () {
+	const div = document.createElement("div")
+	console.log("klick!");
+};
+btn.addEventListener("click", addElement);
+
 // const userName = "Bolesław";
 // const userAge = 22;
 // const bossFamilly = false;
@@ -288,17 +295,17 @@
 // 	"eye color": "blue",
 // };
 
-const counter = {
-	score: 0,
-	increment: function () {
-		this.score++;
-		console.log(this.score);
-	},
-    decrement: function() {
-        this.score--;
-        console.log(this.score);
-    }
-};
+// const counter = {
+// 	score: 0,
+// 	increment: function () {
+// 		this.score++;
+// 		console.log(this.score);
+// 	},
+//     decrement: function() {
+//         this.score--;
+//         console.log(this.score);
+//     }
+// };
 
-counter.increment()
-counter.decrement()
+// counter.increment()
+// counter.decrement()
