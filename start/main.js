@@ -3,18 +3,15 @@ let number = 1;
 
 const addElement = function () {
 	const li = document.createElement("li");
-	li.textContent = number++;
+	li.textContent = number;
 	document.body.appendChild(li);
-	
-	
+	number = number += 2;
 
 	console.log(li);
 
-	if (number % 3 == 1 ) {
+	if (number % 3 == 2) {
 		li.classList.add("big");
 	}
-
-	
 };
 btn.addEventListener("click", addElement);
 
