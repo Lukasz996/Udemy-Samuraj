@@ -2,17 +2,41 @@ const btn = document.querySelector("button");
 let number = 1;
 
 const addElement = function () {
-	const div = document.createElement("div");
-	div.textContent = number;
-	document.body.appendChild(div);
-	number++;
-	console.log(number);
+	const li = document.createElement("li");
+	li.textContent = number++;
+	document.body.appendChild(li);
+	
+	
 
-	if (number % 5 == 1) {
-		div.classList.add("circle");
+	console.log(li);
+
+	if (number % 3 == 1 ) {
+		li.classList.add("big");
 	}
+
+	
 };
 btn.addEventListener("click", addElement);
+
+// ===============================================================
+
+// const btn = document.querySelector("button");
+// let number = 1;
+
+// const addElement = function () {
+// 	const div = document.createElement("div");
+// 	div.textContent = number;
+// 	document.body.appendChild(div);
+// 	number++;
+// 	console.log(number);
+
+// 	if (number % 5 == 1) {
+// 		div.classList.add("circle");
+// 	}
+// };
+// btn.addEventListener("click", addElement);
+
+// ---------------------------------------------------------
 
 // const userName = "Bolesław";
 // const userAge = 22;
