@@ -1,19 +1,25 @@
-const btn = document.querySelector("button");
-let number = 1;
 
-const addElement = function () {
-	const li = document.createElement("li");
-	li.textContent = number;
-	document.body.appendChild(li);
-	number = number += 2;
 
-	console.log(li);
 
-	if (number % 3 == 2) {
-		li.classList.add("big");
-	}
-};
-btn.addEventListener("click", addElement);
+// ==========================================================
+
+// const btn = document.querySelector("button");
+// const list = document.querySelector("ul");
+// let number = 1;
+
+// const addElement = function () {
+// 	const li = document.createElement("li");
+// 	li.textContent = number;
+// 	list.appendChild(li);
+
+// 	console.log(li);
+
+// 	if (number % 3 == 0) {
+// 		li.classList.add("big");
+// 	}
+// 	number += 2;
+// };
+// btn.addEventListener("click", addElement);
 
 // ===============================================================
 
