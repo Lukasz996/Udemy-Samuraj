@@ -5,9 +5,20 @@
 }
 body {
 	background-color: #333;
+	height: 1000vh;
 }
 
-button {
+div {
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* button {
 	display: block;
 	margin: 10px auto;
 	padding: 10px 30px;
@@ -37,4 +48,4 @@ li {
 
 .big {
 	font-size: xx-large;
-}
+} */
