@@ -5,10 +5,11 @@
 }
 body {
 	background-color: #333;
-	height: 1000vh;
 }
 
-div {
+
+
+/* div {
 	width: 100px;
 	height: 100px;
 	position: fixed;
@@ -16,7 +17,7 @@ div {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
+} */
 
 /* button {
 	display: block;
