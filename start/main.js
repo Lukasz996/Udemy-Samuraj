@@ -1,33 +1,42 @@
-document.body.style.height = 10000 + "px";
+const btn = document.querySelector("button");
+const list = document.querySelectorAll("ul");
+const addElement = function () {
+	const li = document.createElement("li");
+	li.style.display = "none";
+	list.appendChild(li);
+};
 
-const squere = document.createElement("div");
-document.body.appendChild(squere);
+// document.body.style.height = 10000 + "px";
 
-let grow = true;
-let size = 100;
-squere.style.width = size + "%";
-squere.style.position = "fixed";
-squere.style.left = 0;
-squere.style.top = 0;
-squere.style.backgroundColor = "green";
-squere.style.height = size + "px";
+// const squere = document.createElement("div");
+// document.body.appendChild(squere);
 
-window.addEventListener("scroll", function () {
-	if (size >= window.innerHeight / 2) {
-		grow = false;
-	} else if (size <= 0) {
-		grow = true;
-	}
-	if (grow == true) {
-		size += 10;
-		squere.style.height = size + "px";
-        squere.style.backgroundColor = "green"
-	} else {
-		size -= 10;
-		squere.style.height = size + "px";
-		squere.style.backgroundColor = "red";
-	}
-});
+// let grow = true;
+// let size = 100;
+// squere.style.width = size + "%";
+// squere.style.position = "fixed";
+// squere.style.left = 0;
+// squere.style.top = 0;
+// squere.style.backgroundColor = "green";
+// squere.style.height = size + "px";
+// const changeHight = function () {
+// 	if (size >= window.innerHeight / 2) {
+// 		grow = false;
+// 	} else if (size <= 0) {
+// 		grow = true;
+// 	}
+// 	if (grow == true) {
+// 		size += 10;
+// 		squere.style.backgroundColor = "green";
+// 	} else {
+// 		size -= 10;
+// 		squere.style.backgroundColor = "red";
+// 	}
+// 	squere.style.height = size + "px";
+// };
+
+// window.addEventListener("scroll", changeHight);
+
 // ==============================================================
 
 // const squere = document.createElement("div");
