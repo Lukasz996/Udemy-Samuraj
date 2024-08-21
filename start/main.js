@@ -1,6 +1,20 @@
-const btn = document.querySelector("button");
-const list = document.querySelectorAll("li");
-let fontSize = 20;
+let size = 10
+let orderElement = 1
+///utworzenie przycisku
+const init = () => {
+
+}
+
+///stworzenie elementów 
+const createElements = () => {
+
+}
+
+init()
+// =================================================
+// const btn = document.querySelector("button");
+// const list = document.querySelectorAll("li");
+// let fontSize = 20;
 // btn.addEventListener("click", () => {
 // 	console.log("kliknięte");
 // 	fontSize++;
@@ -13,15 +27,16 @@ let fontSize = 20;
 
 ///ForEach
 
-btn.addEventListener("click", () => {
-	list.forEach((li) => {
-		li.style.display = "block";
-		li.style.fontSize = `${fontSize}px`;
-		li.style.color = "white"
-	});
-	fontSize++;
-});
+// btn.addEventListener("click", () => {
+// 	list.forEach((li) => {
+// 		li.style.display = "block";
+// 		li.style.fontSize = `${fontSize}px`;
+// 		li.style.color = "white"
+// 	});
+// 	fontSize++;
+// });
 
+// ======================================================
 // document.body.style.height = 10000 + "px";
 
 // const squere = document.createElement("div");
