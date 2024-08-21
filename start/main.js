@@ -1,14 +1,25 @@
 const btn = document.querySelector("button");
 const list = document.querySelectorAll("li");
 let fontSize = 20;
+// btn.addEventListener("click", () => {
+// 	console.log("kliknięte");
+// 	fontSize++;
+// 	for (let i = 0; i < list.length; i++) {
+// 		list[i].style.display = "block";
+// 		list[i].style.color = "white";
+// 		list[i].style.fontSize = `${fontSize}px`;
+// 	}
+// });
+
+///ForEach
+
 btn.addEventListener("click", () => {
-	console.log("kliknięte");
+	list.forEach((li) => {
+		li.style.display = "block";
+		li.style.fontSize = `${fontSize}px`;
+		li.style.color = "white"
+	});
 	fontSize++;
-	for (let i = 0; i < list.length; i++) {
-		list[i].style.display = "block";
-		list[i].style.color = "white";
-		list[i].style.fontSize = `${fontSize}px`;
-	}
 });
 
 // document.body.style.height = 10000 + "px";
