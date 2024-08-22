@@ -1,16 +1,19 @@
-let size = 10
-let orderElement = 1
+let size = 10;
+let orderElement = 1;
 ///utworzenie przycisku
 const init = () => {
+	const btn = document.createElement("button");
+	const newContent = document.createTextNode("Dodaj 10 elementów listy")
+    btn.appendChild(newContent)
+	
+	// const liItem = document.createElement("li")
+	btn.addEventListener("click", null);
+};
 
-}
+///stworzenie elementów
+const createElements = () => {};
 
-///stworzenie elementów 
-const createElements = () => {
-
-}
-
-init()
+init();
 // =================================================
 // const btn = document.querySelector("button");
 // const list = document.querySelectorAll("li");
