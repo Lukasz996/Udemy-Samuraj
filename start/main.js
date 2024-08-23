@@ -3,15 +3,25 @@ let orderElement = 1;
 ///utworzenie przycisku
 const init = () => {
 	const btn = document.createElement("button");
-	const newContent = document.createTextNode("Dodaj 10 elementów listy")
-    btn.appendChild(newContent)
+	btn.innerText = "Dodaj 10 elementów listy ";
+	document.body.appendChild(btn);
+
+	btn.addEventListener("click", () => {
+		console.log("kliknięte");
 	
-	// const liItem = document.createElement("li")
-	btn.addEventListener("click", null);
+	});
 };
 
 ///stworzenie elementów
-const createElements = () => {};
+const createElements = () => {
+	const ulItem = document.createElement("ul");
+	for (let i = 0; i <= 10; i++) {
+		const li = document.createElement("li");
+		li.innerText = "Element" + i;
+		ulItem.appendChild(li);
+	}
+	document.body.appendChild(ulItem);
+};
 
 init();
 // =================================================
