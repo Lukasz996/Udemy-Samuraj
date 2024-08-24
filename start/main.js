@@ -5,25 +5,43 @@ const init = () => {
 	const btn = document.createElement("button");
 	btn.innerText = "Dodaj 10 elementów listy ";
 	document.body.appendChild(btn);
+	const ul = document.createElement("ul");
+	document.body.appendChild;
 
-	btn.addEventListener("click", () => {
+	btn.addEventListener("click", (createElements) => {
 		console.log("kliknięte");
-	
 	});
 };
 
 ///stworzenie elementów
 const createElements = () => {
-	const ulItem = document.createElement("ul");
-	for (let i = 0; i <= 10; i++) {
+	for (let i = 1; i <= 10; i++) {
 		const li = document.createElement("li");
-		li.innerText = "Element" + i;
-		ulItem.appendChild(li);
+		li.textContent = `Element nr ${i}`
+
 	}
-	document.body.appendChild(ulItem);
 };
 
 init();
+
+// =======================================================
+// btn.addEventListener("click", init => {
+// 	const ulItem = document.createElement("ul");
+// 	for (i = 1; i <= 10; i++) {
+// 		const li = document.createElement("li");
+// 		li.innerText = " Element";
+// 		ulItem.appendChild(li);
+
+// 		li++;
+// 	}
+// });
+// const ulItem = document.createElement("ul");
+// for (let i = 0; i <= 10; i++) {
+// 	const li = document.createElement("li");
+// 	li.innerText = "Element" + i;
+// 	ulItem.appendChild(li);
+// }
+// document.body.appendChild(ulItem);
 // =================================================
 // const btn = document.querySelector("button");
 // const list = document.querySelectorAll("li");
