@@ -6,19 +6,18 @@ const init = () => {
 	btn.innerText = "Dodaj 10 elementów listy ";
 	document.body.appendChild(btn);
 	const ul = document.createElement("ul");
-	document.body.appendChild;
+	document.body.appendChild(ul);
 
-	btn.addEventListener("click", (createElements) => {
-		console.log("kliknięte");
-	});
+	btn.addEventListener("click", createElements);
 };
 
 ///stworzenie elementów
 const createElements = () => {
-	for (let i = 1; i <= 10; i++) {
+	for (let i = 0; i < 10; i++) {
 		const li = document.createElement("li");
-		li.textContent = `Element nr ${i}`
-
+		li.textContent = `Element nr ${orderElement++}`;
+		document.querySelector("ul").appendChild(li);
+		
 	}
 };
 
