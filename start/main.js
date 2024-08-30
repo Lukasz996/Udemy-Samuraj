@@ -1,4 +1,7 @@
-
+document.body.addEventListener("mousemove", (e) => {
+	console.log("ruch");
+	document.querySelector('h1').textContent = `${e.clientX},${e.clientY}`
+})
 
 // ================================================================
 
