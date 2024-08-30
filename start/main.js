@@ -1,27 +1,42 @@
-let size = 10;
-let orderElement = 1;
-///utworzenie przycisku
-const init = () => {
-	const btn = document.createElement("button");
-	btn.innerText = "Dodaj 10 elementów listy ";
-	document.body.appendChild(btn);
-	const ul = document.createElement("ul");
-	document.body.appendChild(ul);
 
-	btn.addEventListener("click", createElements);
-};
 
-///stworzenie elementów
-const createElements = () => {
-	for (let i = 0; i < 10; i++) {
-		const li = document.createElement("li");
-		li.textContent = `Element nr ${orderElement++}`;
-		li.style.fontSize = `${size++}px`;
-		document.querySelector("ul").appendChild(li);
-	}
-};
+// ================================================================
 
-init();
+// let size = 10;
+// let orderElement = 1;
+// ///utworzenie przycisku
+// const init = () => {
+// 	const btn = document.createElement("button");
+// 	const btnReset = document.createElement("button");
+// 	btn.innerText = "Dodaj 10 elementów listy ";
+// 	btnReset.innerHTML = " Wyczyść";
+// 	document.body.appendChild(btn);
+// 	document.body.appendChild(btnReset);
+// 	const ul = document.createElement("ul");
+// 	ul.style.listStyle = "none";
+// 	ul.style.color = "white";
+// 	document.body.appendChild(ul);
+// 	btn.addEventListener("click", createElements);
+// 	btnReset.addEventListener("click", cleanList);
+// };
+
+// ///stworzenie elementów
+// const createElements = () => {
+// 	for (let i = 0; i < 10; i++) {
+// 		const li = document.createElement("li");
+// 		li.textContent = `Element nr ${orderElement++}`;
+// 		li.style.fontSize = `${size++}px`;
+// 		document.querySelector("ul").appendChild(li);
+// 	}
+// };
+
+// const cleanList = () => {
+// 	document.querySelector("ul").textContent = "";
+// 	size = 10;
+// 	orderElement = 1;
+// };
+
+// init();
 
 // =======================================================
 // btn.addEventListener("click", init => {
