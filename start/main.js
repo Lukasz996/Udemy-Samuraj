@@ -1,26 +1,28 @@
-document.body.addEventListener("click", (event) => {
-	console.log("kliknięcie");
-	console.log(event.clientX, event.clientY);
-	const color = getColor(event);
-	document.body.style.backgroundColor = color;
-	// document.body.style.backgroundColor = "red"
-});
+// ==================== zmiana koloru za pomocą funkcji ========
 
-const getColor = (e) => {
-	if (e.clientX % 2 === 0) {
-		if (e.clientY % 2 === 0) {
-			return "red";
-		} else {
-			return "green";
-		}
-	} else {
-		if (e.clientY % 2 === 0) {
-			return "green";
-		} else {
-			return " blue";
-		}
-	}
-};
+// document.body.addEventListener("click", (event) => {
+// 	console.log("kliknięcie");
+// 	console.log(event.clientX, event.clientY);
+// 	const color = getColor(event);
+// 	document.body.style.backgroundColor = color;
+// 	// document.body.style.backgroundColor = "red"
+// });
+
+// const getColor = (e) => {
+// 	if (e.clientX % 2 === 0) {
+// 		if (e.clientY % 2 === 0) {
+// 			return "red";
+// 		} else {
+// 			return "green";
+// 		}
+// 	} else {
+// 		if (e.clientY % 2 === 0) {
+// 			return "green";
+// 		} else {
+// 			return " blue";
+// 		}
+// 	}
+// };
 
 // ====================================================================
 
