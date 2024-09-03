@@ -10,6 +10,13 @@ body {
 	height: 100vh;
 }
 
+div {
+	position: fixed; 
+	width: 200px;
+	height: 200px;
+	background-color: #f237f2;
+	cursor: pointer;
+}
 /* h1 {
 	position: fixed;
 	top: 50%;
