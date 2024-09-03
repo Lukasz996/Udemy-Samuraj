@@ -1,18 +1,26 @@
-document.body.addEventListener("click", (e) => {
+document.body.addEventListener("click", (event) => {
 	console.log("kliknięcie");
-
-	const x = e.clientX;
-	const y = e.clientY;
-	const width = window.innerWidth;
-	const height = window.innerHeight;
-	const red = (x / width) * 100 % 2;
-	const green = ((y / height) * 100) % 1;
-	const blue = ((x / width) * 100 + (y / height) * 100) ;
-
-	document.body.style.backgroundColor = `rgb(${red}%,${green}%,${blue}%)`;
-	console.log(x,y);
-	
+	console.log(event.clientX, event.clientY);
+	const color = getColor(event);
+	document.body.style.backgroundColor = color;
+	// document.body.style.backgroundColor = "red"
 });
+
+const getColor = (e) => {
+	if (e.clientX % 2 === 0) {
+		if (e.clientY % 2 === 0) {
+			return "red";
+		} else {
+			return "green";
+		}
+	} else {
+		if (e.clientY % 2 === 0) {
+			return "green";
+		} else {
+			return " blue";
+		}
+	}
+};
 
 // ====================================================================
 
