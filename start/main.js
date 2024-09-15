@@ -3,17 +3,35 @@ let green = 100;
 let blue = 100;
 
 document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+//instrukcja if
+// const changeColor = (e) => {
+// 	console.log(e.keyCode);
+// 	if (e.keyCode === 38 && red < 255) {
+// 		document.body.style.backgroundColor = `rgb(${(red += 5)}, ${(green += 5)}, ${(blue += 5)})`;
+// 	} else if (e.keyCode === 40 && red > 0) {
+// 		document.body.style.backgroundColor = `rgb(${(red -= 5)}, ${(green -= 5)}, ${(blue -= 5)})`;
+// 	}
 
+// 	console.log(red);
+// 	console.log(green);
+// 	console.log(blue);
+// };
+
+//instrukcja switch
 const changeColor = (e) => {
-	console.log(e.keyCode);
-	if ((e.keyCode === 38)) {
-		document.body.style.backgroundColor = `rgb(${red++}, ${green++}, ${blue++})`;
-	} else if ((e.keyCode === 40)) {
-		document.body.style.backgroundColor = `rgb(${red--}, ${green--}, ${blue--})`;
+	switch (e.keyCode) {
+		case 38:
+			document.body.style.backgroundColor = `rgb(${(red += 5)}, ${(green += 5)}, ${(blue += 5)})`;
+			break;
+		case 40:
+			document.body.style.backgroundColor = `rgb(${(red -= 5)}, ${(green -= 5)}, ${(blue -= 5)})`;
+			break;
+
+		default:
+			break;
 	}
-	console.log(red);
-	console.log(green);
-	console.log(blue);
+	console.log(40, red, green, blue);
+	console.log(38, red, green, blue);
 };
 
 window.addEventListener("keydown", changeColor);
