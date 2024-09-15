@@ -1,39 +1,39 @@
 
 
-================== przesówanie kwadratu za pomocą myszki ===============
+// ================== przesówanie kwadratu za pomocą myszki ===============
 
-const div = document.querySelector("div");
-let divX = 150;
-let divY = 50;
-div.style.left = divX + "px";
-div.style.top = `${divY}px`;
+// const div = document.querySelector("div");
+// let divX = 150;
+// let divY = 50;
+// div.style.left = divX + "px";
+// div.style.top = `${divY}px`;
 
-let drawActive = false;
-let insertDivX;
-let insertDivY;
+// let drawActive = false;
+// let insertDivX;
+// let insertDivY;
 
-div.addEventListener("mousedown", (e) => {
-	console.log("wciśnięte");
-	div.style.backgroundColor = "gray";
-	drawActive = true;
+// div.addEventListener("mousedown", (e) => {
+// 	console.log("wciśnięte");
+// 	div.style.backgroundColor = "gray";
+// 	drawActive = true;
 
-	insertDivX = e.offsetX;
-	insertDivY = e.offsetY;
-});
-div.addEventListener("mousemove", (e) => {
-	console.log("poruszenie");
-	if (drawActive) {
-		divX = e.clientX - insertDivX;
-		divY = e.clientY - insertDivY;
-		div.style.left = `${divX }px`;
-		div.style.top = `${divY }px`;
-	}
-});
-div.addEventListener("mouseup", () => {
-	console.log("puszczenie");
-	div.style.backgroundColor = `rgb(103, 255, 197)`;
-	drawActive = false;
-});
+// 	insertDivX = e.offsetX;
+// 	insertDivY = e.offsetY;
+// });
+// div.addEventListener("mousemove", (e) => {
+// 	console.log("poruszenie");
+// 	if (drawActive) {
+// 		divX = e.clientX - insertDivX;
+// 		divY = e.clientY - insertDivY;
+// 		div.style.left = `${divX }px`;
+// 		div.style.top = `${divY }px`;
+// 	}
+// });
+// div.addEventListener("mouseup", () => {
+// 	console.log("puszczenie");
+// 	div.style.backgroundColor = `rgb(103, 255, 197)`;
+// 	drawActive = false;
+// });
 
 // ==================== zmiana koloru za pomocą funkcji ========
 
