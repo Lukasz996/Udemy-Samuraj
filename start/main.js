@@ -1,8 +1,12 @@
-let red = 100;
-let green = 100;
-let blue = 100;
 
-document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+
+// ================ zmiana koloru za pomocą klawiszy ======================
+
+// let red = 100;
+// let green = 100;
+// let blue = 100;
+
+// document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 //instrukcja if
 // const changeColor = (e) => {
 // 	console.log(e.keyCode);
@@ -18,28 +22,28 @@ document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 // };
 
 //instrukcja switch
-const changeColor = (e) => {
-	switch (e.keyCode) {
-		case 38:
-			document.body.style.backgroundColor = `rgb(${
-				red <= 255 ? (red += 5) : red
-			}, ${green <= 255 ? (green += 5) : green}, ${
-				blue <= 255 ? (blue += 5) : blue
-			})`;
-			break;
-		case 40:
-			document.body.style.backgroundColor = `rgb(${
-				red > 0 ? (red -= 5) : red
-			}, ${green > 0 ? (green -= 5) : green}, ${
-				blue > 0 ? (blue -= 5) : blue
-			})`;
-			break;
-	}
-	console.log(40, red, green, blue);
-	console.log(38, red, green, blue);
-};
+// const changeColor = (e) => {
+// 	switch (e.keyCode) {
+// 		case 38:
+// 			document.body.style.backgroundColor = `rgb(${
+// 				red <= 255 ? (red += 5) : red
+// 			}, ${green <= 255 ? (green += 5) : green}, ${
+// 				blue <= 255 ? (blue += 5) : blue
+// 			})`;
+// 			break;
+// 		case 40:
+// 			document.body.style.backgroundColor = `rgb(${
+// 				red > 0 ? (red -= 5) : red
+// 			}, ${green > 0 ? (green -= 5) : green}, ${
+// 				blue > 0 ? (blue -= 5) : blue
+// 			})`;
+// 			break;
+// 	}
+// 	console.log(40, red, green, blue);
+// 	console.log(38, red, green, blue);
+// };
 
-window.addEventListener("keydown", changeColor);
+// window.addEventListener("keydown", changeColor);
 
 // ================== przesówanie kwadratu za pomocą myszki ===============
 
