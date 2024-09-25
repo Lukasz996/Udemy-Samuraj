@@ -4,7 +4,7 @@ const password = "user";
 const message = "wyjechałam na zawsze"
 
 input.addEventListener('input', (e) => {
- // console.log(e.target.value);
+ console.log(e.target.value);
  if (password === e.target.value) {
   div.textContent = message;
   e.target.value = '';
