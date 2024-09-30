@@ -1,7 +1,7 @@
 const input = document.getElementById('pass');
 const div = document.querySelector('.message');
 const password = "user";
-const message = "wyjechałam na zawsze"
+const message = "wyjechałam na zawsze!"
 
 input.addEventListener('input', (e) => {
  console.log(e.target.value);
